@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="conteiner">
+
+        <button id="dark-oq">Dark</button>
+        <h2>QR Code Generator</h2>
+
+        <div class="qr">
+
+
+
+            <div class="div-html">
+
+                <div>
+                    <i class='bx bx-user'></i>
+                    <input type="text" id="text" placeholder="ismni kiriting">
+                </div>
+
+                <div>
+                    <i class='bx bx-phone'></i>
+                    <input type="text" id="text2" placeholder="+998 XX XXX XX XX">
+                </div>
+
+                <div>
+                    <i class='bx bx-envelope'></i>
+                    <input type="text" id="text3" placeholder="xxxx@gmail.com">
+                </div>
+
+                <div>
+                    <i class='bx bx-globe'></i>
+                    <input type="text" id="text4" placeholder="https://xxxxxxxx.com">
+                </div>
+
+                <div>
+                    <i class='bx bx-buildings'></i>
+                    <input type="text" id="text5" placeholder="url or text">
+                </div>
+
+                <div>
+                    <i class='bx bx-current-location'></i>
+                    <input type="text" id="text6" placeholder="url or text">
+                </div>
+
+            </div>
+
+            <div id="qrcode" class="qrrrr"></div>
+
+        </div>
+        <button onclick="generateQRCode()" class="button">QR Code yaratish</button>
+        <div class="color-picker">
+            <div>
+                <label>QR Code</label>
+                <input type="color" value="#000000" id="qrColor">
+            </div>
+            <div>
+                <label>QR Code fon rangi:</label>
+                <input type="color" value="#ffffff" id="bgColor">
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
